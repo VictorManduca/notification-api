@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    container_name: db
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=websocket
+    ports:
+      - 5432:5432
